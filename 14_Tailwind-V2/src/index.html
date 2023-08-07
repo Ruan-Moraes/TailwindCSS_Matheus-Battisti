@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailwindCSS V2</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="bg-rose-400 text-white font-bold text-center p-10">
+        <!-- Cores novas -->
+        <div class="text-rose-900 p-2 mb-20">Cores (Desatualizado)
+            <p class="bg-amber-400">amber</p>
+        </div>
+    </div>
+
+    <!-- Darkmode -->
+    <div class="bg-red-500 text-white font-bold text-center p-10 mt-12">
+        <div class="dark:bg-slate-600 bg-white text-black transition">Teste de DarkMode</div>
+        <div>
+            <button id="dark-mode" class="bg-red-400 hover:bg-red-500 text-white rounded py-2 px-4 m-4">Só funciono com o DarkMode em "class"!</button>
+        </div>
+    </div>
+
+    <!-- Ring -->
+    <div class="bg-red-600 text-white font-bold text-center p-10 mt-12 mb-24 space-x-4 h-28">
+        <button class="ring-4 ring-blue-100 py-2 px-4 bg-rose-500 rounded">Ring Externo</button>
+        <button class="ring-inset ring-4 ring-blue-100 py-2 px-4 bg-rose-500 hover:bg-blue-100 rounded transition hover:text-lg">Ring Interno</button>
+    </div>
+
+    <!-- Forms -->
+    <div>
+        <input type="text" placeholder="Digite seu nome" class="m-4">
+        <input type="text" placeholder="Digite seu nome" class="m-4 border-0 border-b-2 border-black transition">
+        <input type="text" placeholder="Digite seu nome" class="m-4 border-0 border-b-2 border-black bg-slate-100 focus:bg-slate-200 focus:ring-0 placeholder:text-gray-800 hover:placeholder:text-gray-950 transition">
+    </div>
+    <div>
+        <select name="i" id="i" class="m-4">
+            <option value="">Arroz</option>
+            <option value="">Batata</option>
+        </select>
+    </div>
+    <div class="m-4 flex items-center gap-2">
+        <input type="checkbox" id="checkbox" name="checkbox" class="border-gray-300 text-amber-400 focus:ring-0">
+        <label for="checkbox" class="select-none">Clique em mim.</label>
+    </div>
+
+    <!-- Line height -->
+    <div class="m-6">
+        <h1 class="text-4xl">Line height padrão</h1>
+        <h1 class="text-4xl">Line height padrão</h1>
+        <h1 class="text-4xl leading-3">Line height modificado</h1>
+        <h1 class="text-4xl leading-3">Line height modificado</h1>
+      </div>
+
+      <!-- Mais opcões de espaçamentos e opacidade -->
+      <div class="m-0.5 bg-red-300 opacity-95">
+        <p class="text-9xl">Testando espaçamento menor!</p>
+      </div>
+
+      <!-- Funcionalidades de Overflow -->
+      <div>
+          <p class="overflow-hidden overflow-ellipsis max-w-xs m-6 p-6 mx-auto bg-red-200 text-red-500 font-medium rounded-lg">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elitasdfggçqweeusadjsadijasidjasdjasidjasidjaidjaisdjaisdjaisd? Dolores praesentium temporibus perspiciatis laboriosam consectetur eos suscipit dolorum ut illo. Facere error itaque voluptatibus iure dolores dicta pariatur beatae, hic suscipit.
+          </p>
+          <p class="overflow-hidden overflow-clip max-w-xs m-6 p-6 mx-auto bg-green-200 text-green-500 font-medium rounded-lg">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elitasdfggçqweeusadjsadijasidjasdjasidjasidjaidjaisdjaisdjaisd? Dolores praesentium temporibus perspiciatis laboriosam consectetur eos suscipit dolorum ut illo. Facere error itaque voluptatibus iure dolores dicta pariatur beatae, hic suscipit.
+          </p>
+      </div>
+</body>
+
+</html>

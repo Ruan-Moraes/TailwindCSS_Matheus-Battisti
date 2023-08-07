@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container bg-green-600 mx-auto mb-4 p-4">
+        <p class="text-center">Teste com container</p>
+    </div>
+    <!-- Exercício 01 -->
+    <div class="container bg-green-600 md:bg-blue-600 mx-auto mb-4 p-4">
+        <p class="text-center">Teste com container</p>
+    </div>
+    <!-- Border-box $ Border-content -->
+    <div class="container bg-purple-500 m-4 border-2 border-purple-900 box-border p-10">
+        <p>Border-Box</p>
+    </div>
+    <div class="container bg-teal-500 m-4 border-2 border-teal-900 box-content p-10">
+        <p>Border-content</p>
+    </div>
+    <!-- Display -->
+    <div class="container">
+        <span class="block bg-red-500 text-red-50">Span não são elementos de bloco.</span>
+        <span class="block bg-red-500 text-red-50">Span não são elementos de bloco.</span>
+        <div class="inline bg-amber-500 text-amber-50">Div não são elementos de linha.</div>
+        <div class="inline bg-amber-500 text-amber-50">Div não são elementos de linha.</div>
+        <br>
+        <div class="inline-block w-40 h-40 bg-teal-500 text-center text-teal-50">Inline-block</div>
+        <div class="inline-block w-40 h-40 bg-teal-500 text-center text-teal-50">Inline-block</div>
+        <div class="invisible bg-green-500 text-green-50 hover:visible">Texto escondido (Não funciono :( ))</div>
+    </div>
+    <!-- Exercício 02 -->
+    <div class="container w-80 h-80 mt-10 bg-slate-300">
+        <div class="inline-block bg-red-500">Div1</div>
+        <div class="inline-block bg-green-500">Div2</div>
+        <div class="inline-block bg-blue-500">Div3</div>
+    </div>
+    <!-- Float $ Clear -->
+    <div class="bg-gray-500 float-right">Float-right</div>
+    <div class="bg-gray-500 float-left">Float-left</div>
+    <div class="clear-both"></div>
+    <div class="bg-gray-500 float-right">Float-right</div>
+    <div class="bg-gray-500 float-left">Float-left</div>
+    <div class="clear-both"></div>
+    <!-- Overflow -->
+    <div class="overflow-auto h-16 m-6 bg-red-300">
+        <h1>Auto</h1>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+    </div>
+    <div class="overflow-hidden h-16 m-6 bg-red-300">
+        <h1>Hidden</h1>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+    </div>
+    <div class="overflow-x-auto h-16 w-96 m-6 bg-red-300">
+        <h1>Eixo-x (Não funcionado)</h1>
+        <p>Testando overflowTestando overflowTestando overflowTestando overflowTestando overflowTestandoverflowTestando overflowTestando overflowTestando overflowTestando overflowTestando overflowTestando overflowTestando overflowTestando overflowTestando overflowTestandoTestando overflowTestando overflowTestando overflowTestando overflowTestando overflowTestando overflowTestando overflowTestando overflowTestando overflowTestando overflowTestando overflowTestando overflowTestando overflowTestando overflowTestando overflowTestando overflowTestando overflowTestando overflowTestando overflowTestando overflowTestando overflowTestando overflowTestando overflowTestando overflowTestando overflowTestando overflowTestando overflowTestando overflowTestando overflowTestando overflowTestando overflowTestando overflowTestando overflow</p>
+    </div>
+    <div class="overflow-y-auto h-16 m-6 bg-red-300">
+        <h1>Eixo-y</h1>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+        <p>Testando overflow</p>
+    </div>
+    <!-- Positions -->
+    <div class="relative bg-pink-300">
+        text
+        <div class="absolute top-0 right-0 bg-pink-900">Absolute</div>
+    </div>
+    <!-- Exercício 3 -->
+    <div class="container relative w-60 h-60 m-8 bg-red-500">
+        Teste container
+        <div class="absolute bottom-0 right-0 bg-green-200">Teste relative</div>
+    </div>
+     <!-- Visibility -->
+     <div class="container bg-red-400 invisible m-10">
+        <p>Estou oculto</p>
+        <div class="m-10">Espaço</div>
+        <div class="m-10">Espaço</div>
+        <div class="m-10">Espaço</div>
+     </div>
+     <!-- Z-index -->
+        <div class="container relative m-40">
+            <div class="bg-red-600 h-20 w-20 p-6 absolute z-10">Na frente</div>
+            <div class="bg-red-300 h-20 w-20 p-6 absolute m-4">Atrás</div>
+        </div>
+     <!-- Exercício 4 -->
+        <div class="container relative">
+            <div class="absolute bg-green-200 h-20 w-20 p-6 z-40">Posicão 1</div>
+            <div class="absolute bg-green-400 h-20 w-20 p-6 z-30 m-4">Posicão 2</div>,
+            <div class="absolute bg-green-600 h-20 w-20 p-6 z-20 m-8">Posicão 3</div>
+            <div class="absolute bg-green-800 h-20 w-20 p-6 z-10 m-12">Posicão 4</div>
+        </div>
+</body>
+</html>

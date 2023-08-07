@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    html {
+        @apply tracking-wider;
+    }
+
+    .header-links {
+       @apply mx-2 lg:mx-4 transition font-medium;
+    }
+    .header-links:hover {
+        @apply text-color01;
+    }
+
+    .section1-links {
+        @apply py-4 px-8 border-2 rounded-full text-center font-bold;
+    }
+    .section1-links:hover {
+        @apply text-15;
+    }
+
+    .termos-e-condicoes {
+        @apply underline font-semibold;
+    }
+
+    .whybepremium {
+        @apply w-full md:mx-4 sm:mb-8 md:mb-6 flex flex-row sm:flex-col items-center flex-shrink sm:text-center;
+    }
+    .whybepremium:nth-child(even) {
+        @apply my-14;
+    }
+
+    .card {
+        @apply max-w-400px h-912px p-4 m-2 flex flex-col justify-between bg-white shadow-2xl rounded-2xl;
+    }
+    .free-months {
+        @apply py-1 px-2 bg-color02 rounded-md text-white text-sm font-bold;
+    }
+    .free-months:hover {
+        @apply underline;
+    }
+    .level-accounts {
+        @apply mt-2 text-2xl font-semibold;
+    }
+    .benefits-cards {
+        @apply my-0.5 flex flex-row items-start;
+    }
+    .benefits-cards-span {
+        @apply mt-0.5 mr-0.5;
+    }
+    .cards-links {
+        @apply w-full px-10px py-14px mt-3 bg-color03 rounded-full text-white text-center font-semibold uppercase;
+    }
+}

@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .input-autentication {
+        @apply w-full p-2 mb-3 bg-input rounded outline-none border focus:border-black sm:px-4 sm:py-3 sm:bg-transparent sm:border sm:focus:border-blue sm:focus:shadow-sm sm:focus:shadow-blue;
+    }
+
+    .input-to-send {
+        @apply w-full p-2 mb-2 bg-blue hover:bg-blue-hover rounded text-white font-bold text-lg sm:px-4 sm:py-3;
+    }
+    
+    .other_links {
+        @apply sm:hover:underline sm:cursor-pointer;
+    }
+
+    .option-of-more-languages {
+        @apply px-2 py-1 rounded border border-blue border-opacity-30 text-gray-500 font-extrabold sm:bg-gray-100 sm:hover:bg-gray-200 sm:border-gray-400;
+    }
+}
